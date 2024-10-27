@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+</head>
+<body>
+  <h1>Bem-vindo ao meu site!</h1>
+  <p>Este é um parágrafo de exemplo.</p>
+  <a href="https://exemplo.com">Visite o Exemplo</a>
+</body>
+</html>
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+// Exibe uma mensagem quando o botão é clicado
+function mostrarMensagem() {
+  alert('Olá! Você clicou no botão.');
+}
+<button onclick="mostrarMensagem()">Clique aqui</button>
+// Servidor básico usando Express
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Olá, mundo!');
+});
+
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://localhost:${port}`);
+});
+npm init -y
+npm install express
+git init
+git add .
+git commit -m "Primeiro commit"
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px;
+}
